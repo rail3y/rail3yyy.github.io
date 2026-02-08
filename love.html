@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Said Yes 💖</title>
+
+  <style>
+    body {
+      background: #ffe6f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .content {
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #ff3385;
+      margin-top: 10rem;
+
+    }
+
+    p {
+      font-size: 22px;
+      margin-bottom: 2rem;
+    }
+
+    /* 💖 Corner Images */
+    .corner-img {
+      position: absolute;
+      width: 15rem;
+      height: 15rem;
+      object-fit: cover;
+      border-radius: 1rem;
+    }
+
+    .top-left { top: 0; left: 0; }
+    .top-right { top: 0; right: 0; }
+    .bottom-left { bottom: 0; left: 0; }
+    .bottom-right { bottom: 0; right: 0; }
+
+    /* 🖼️ Middle Top Image */
+    .middle-top {
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* 💘 Button Style */
+    .love-btn {
+      background-color: #ff4d88;
+      color: white;
+      border: none;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 7px;
+      cursor: pointer;
+      animation: pulse 1s infinite alternate;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(1); }
+      to { transform: scale(1.1); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <h1>You’re my Valentine now 💖</h1>
+    <p>I’m really glad you said yes 😊 I’m looking forward to spending Time with you</p>
+
+    <!-- BUTTON -->
+    <a href="flowerssss.html">
+      <button class="love-btn">Click Me 🌸💌</button>
+    </a>
+  </div>
+
+  <!-- IMAGES -->
+  <img src="img/love1.jpg" class="corner-img top-left" />
+  <img src="img/love2.jpg" class="corner-img top-right" />
+  <img src="img/love3.jpg" class="corner-img bottom-left" />
+  <img src="img/love4.jpg" class="corner-img bottom-right" />
+  <img src="img/love5.jpg" class="corner-img middle-top" />
+
+</body>
+</html>
